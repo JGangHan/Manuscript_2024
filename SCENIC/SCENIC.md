@@ -6,13 +6,11 @@
 2. 细胞质控后也是PCA，高变基因鉴定，clustering
 3. 再之后是转录因子分析
 ## 分析原理
-1. **CO-expression**. 用**GENIE3**软件将转录因子和其他基因进行共表达分析，鉴别到众多TF-Genes共表达模块，一个转录因子对应一个模块，不同模块可以有共同的转录因子
+1. **CO-expression**. 用**GENIE3**软件将转录因子和其他基因进行共表达分析，鉴别到众多TF-Genes共表达模块（module/regulon），一个转录因子对应一个模块，不同模块可以有共同的转录因子
 2. **Motif discovery**。用**cisTarget**数据库，这个数据库中包含人/小鼠转录因子motif序列，检测每个TF-Genes共表达模块中每个基因上游是否包含该转录因子motif序列，过滤掉不包含该转录因子motif序列的基因
-3. **Cell scoring**. 
-
-
+3. **Cell scoring**. 计算AUCell algorithm用来表示每个模块在单个细胞中的 regulon activit，从而构建一个 score x cells 矩阵（类似genes x cells矩阵），从而可以用于数据降维
 ![image](https://github.com/JGangHan/sc_data_analysis/assets/75400599/62da89c5-e2f4-471f-beb8-5c4970e7d89c)
-
+4. 
 
 
 
