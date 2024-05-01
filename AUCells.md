@@ -3,7 +3,6 @@
 **tips：**
 由于AUCells在分析过程中会将原始gene * cell表达矩阵转换为 ranking * cell排序矩阵，所以在原始的表达矩阵中的数值无论是raw count，TMP，UMI count或者经过归一化方法矫正的数值，都不会影响后续的分析结果，这种分析方法理论上避免了library size对基因集活性分析的影响
 
-
 ## 分析流程
 1. **count matrix**转为sparse count matrix；多个**gene sets**，这些基因集可以包含数量不等的基因
 
